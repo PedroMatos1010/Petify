@@ -1,0 +1,100 @@
+.dashboard-container {
+    background: linear-gradient(135deg, #a67c52 0%, #4a3b2a 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    overflow: hidden; 
+}
+
+.dash-header {
+    background: #2a2a2a;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-text { font-size: 24px; margin: 0; font-weight: bold; }
+.sub-logo { font-size: 14px; font-weight: normal; opacity: 0.8; }
+.header-actions { display: flex; gap: 10px; align-items: center; }
+
+.search-bar {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon {
+    width: 35px;
+    filter: invert(1);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #1a1a1a !important;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    width: 180px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.9);
+    z-index: 999999;
+    display: block !important;
+}
+
+.menu-item {
+    padding: 15px;
+    color: white !important;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-item:hover { background-color: #333 !important; }
+.menu-item.logout { color: #ff6b6b !important; }
+
+.left-panel { flex: 1; background: rgba(0, 0, 0, 0.3); border-radius: 10px; padding: 15px; max-width: 250px; display: flex; flex-direction: column; }
+.vertical-scroll-list { overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.request-card-small { background: rgba(255, 255, 255, 0.1); padding: 10px; border-radius: 8px; }
+.card-header-row { display: flex; justify-content: space-between; }
+.avatar-small { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; }
+.status-dot { width: 10px; height: 10px; border-radius: 50%; }
+.status-dot.green { background-color: #4CAF50; }
+.status-dot.red { background-color: #F44336; }
+.main-panel { flex: 3; display: flex; flex-direction: column; gap: 20px; overflow-y: auto; }
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+.kpi-card { background: rgba(128, 128, 128, 0.4); padding: 20px; text-align: center; border-radius: 10px; }
+.horizontal-scroll-list { display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px; }
+.pending-card { background: #3a3a3a; min-width: 320px; padding: 15px; border-radius: 10px; display: flex; gap: 15px; align-items: center; }
+.interview-card-border { border: 1px solid #FF9800; background-color: #3f3a35; }
+.pet-img-medium { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; }
+.date-action-row { display: flex; gap: 5px; margin-top: 5px; }
+.date-input { background: #222; border: 1px solid #555; color: white; padding: 5px; border-radius: 4px; width: 130px; }
+.btn-schedule { background: #2196F3; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; }
+.btn-refuse-pending { background-color: #F44336; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; font-weight: bold; font-size: 12px; }
+.btn-accept { background: #4CAF50; color: white; border: none; padding: 6px; border-radius: 4px; cursor: pointer; flex: 1; font-weight: bold; }
+.btn-refuse { background: #F44336; color: white; border: none; padding: 6px; border-radius: 4px; cursor: pointer; flex: 1; font-weight: bold; }
+.pets-list-container { background: rgba(0,0,0,0.3); border-radius: 10px; padding: 10px; max-height: 250px; overflow-y: auto; }
+.pet-row { display: flex; align-items: center; padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.avatar-tiny { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; margin-right: 15px; }
+.btn-add-pet { background: transparent; border: 1px solid white; color: white; padding: 5px 10px; cursor: pointer; border-radius: 5px; }

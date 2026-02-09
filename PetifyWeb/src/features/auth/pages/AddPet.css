@@ -1,0 +1,179 @@
+.add-pet-container {
+    background: linear-gradient(135deg, #a67c52 0%, #4a3b2a 100%);
+    min-height: 100vh;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-header {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+}
+.logo-text { font-size: 24px; margin: 0; font-weight: bold; }
+.sub-logo { font-size: 14px; font-weight: normal; opacity: 0.8; }
+
+.menu-container { position: relative; cursor: pointer; display: flex; align-items: center; }
+.hamburger-icon { width: 35px; filter: invert(1); transition: transform 0.2s; }
+.hamburger-icon:hover { transform: scale(1.1); }
+
+.dropdown-menu {
+    position: absolute; top: 45px; right: 0;
+    background-color: #222; border: 1px solid #555; border-radius: 6px;
+    width: 140px; z-index: 2000; display: flex; flex-direction: column;
+}
+.menu-item { padding: 12px; text-align: center; border-bottom: 1px solid #444; cursor: pointer; }
+.menu-item:hover { background-color: #333; }
+.menu-item.logout { color: #ffcccc; }
+
+.add-pet-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-title { align-self: flex-start; margin-bottom: 20px; font-weight: 500; color: #eee; }
+
+.pet-form {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.image-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.image-preview-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.preview-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+.remove-img-btn {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.remove-img-btn:hover { background-color: #ff0000; transform: scale(1.1); }
+
+.add-photo-btn {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #777;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.05);
+    transition: all 0.2s;
+    color: #aaa;
+}
+.add-photo-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+    border-color: #FF9800;
+    color: white;
+}
+
+.plus-sign { font-size: 30px; line-height: 30px; font-weight: bold; }
+.add-text { font-size: 10px; margin-top: 5px; }
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.full-width { grid-column: span 2; }
+
+.input-group { display: flex; flex-direction: column; gap: 5px; }
+.input-group label { font-size: 13px; font-weight: bold; color: #ccc; }
+
+.input-group input, .input-group textarea, .dark-select {
+    background-color: #222;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+.input-group input:focus, .dark-select:focus { border-color: #888; }
+.dark-select:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.submit-btn:hover { background-color: #45a049; }
+.submit-btn:disabled { background-color: #555; cursor: not-allowed; }
+
+
+.image-section-label {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.cover-badge {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    pointer-events: none;
+}

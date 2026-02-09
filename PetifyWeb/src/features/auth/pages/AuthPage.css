@@ -1,0 +1,64 @@
+.auth-page-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #c5935f 0%, #3a3a3a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 8%;
+  box-sizing: border-box;
+}
+
+.auth-welcome-text, .auth-petify-logo {
+  color: white !important;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.auth-content-center {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn-auth-main {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 0;
+  width: 280px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-auth-main:active {
+  transform: scale(0.95);
+}
+
+.business-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.business-link:hover {
+  color: white;
+}

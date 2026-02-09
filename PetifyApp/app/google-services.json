@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "431558567766",
+    "project_id": "aula-ccb81",
+    "storage_bucket": "aula-ccb81.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431558567766:android:1bea6a7f0b6a96dfdf98f7",
+        "android_client_info": {
+          "package_name": "com.example.loginfirebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNdcw0pPmmpqsoq9PqidCP5iLZk7lF2WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431558567766:android:4734237bdf788ff8df98f7",
+        "android_client_info": {
+          "package_name": "com.example.registo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNdcw0pPmmpqsoq9PqidCP5iLZk7lF2WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
